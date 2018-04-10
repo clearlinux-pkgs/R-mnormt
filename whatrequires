@@ -1,1 +1,16 @@
 # This file contains recursive sources that require this package
+R-DendSer
+R-broom
+R-caret
+R-clue
+R-dendextend
+R-fpc
+R-modelr
+R-mvoutlier
+R-psych
+R-recipes
+R-robCompositions
+R-seriation
+R-sn
+R-tclust
+R-tidyverse
