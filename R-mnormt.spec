@@ -4,7 +4,7 @@
 #
 Name     : R-mnormt
 Version  : 1.5.5
-Release  : 4
+Release  : 5
 URL      : https://cran.r-project.org/src/contrib/mnormt_1.5-5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/mnormt_1.5-5.tar.gz
 Summary  : The Multivariate Normal and t Distributions
