@@ -4,14 +4,14 @@
 #
 Name     : R-mnormt
 Version  : 1.5.5
-Release  : 15
+Release  : 16
 URL      : https://cran.r-project.org/src/contrib/mnormt_1.5-5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/mnormt_1.5-5.tar.gz
-Summary  : The Multivariate Normal and t Distributions
+Summary  : The multivariate Normal and T distributions.
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
-Requires: R-mnormt-lib
-BuildRequires : clr-R-helpers
+Requires: R-mnormt-lib = %{version}-%{release}
+BuildRequires : buildreq-R
 
 %description
 distribution function of multivariate normal and "t" random variables,
@@ -35,11 +35,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523319455
+export SOURCE_DATE_EPOCH=1552776837
 
 %install
+export SOURCE_DATE_EPOCH=1552776837
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1523319455
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -74,8 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library mnormt|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  mnormt || :
 
 
 %files
@@ -101,7 +100,6 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/mnormt/help/paths.rds
 /usr/lib64/R/library/mnormt/html/00Index.html
 /usr/lib64/R/library/mnormt/html/R.css
-/usr/lib64/R/library/mnormt/libs/symbols.rds
 
 %files lib
 %defattr(-,root,root,-)
