@@ -1,6 +1,4 @@
 # This file contains recursive sources that require this package
-R-SGP
-R-fAssets
 R-lavaan
 R-phytools
 R-psych
