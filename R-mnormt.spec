@@ -4,13 +4,14 @@
 #
 Name     : R-mnormt
 Version  : 2.0.1
-Release  : 31
+Release  : 32
 URL      : https://cran.r-project.org/src/contrib/mnormt_2.0.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/mnormt_2.0.1.tar.gz
 Summary  : The Multivariate Normal and t Distributions, and Their Truncated
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
 Requires: R-mnormt-lib = %{version}-%{release}
+Requires: R-tmvnsim
 BuildRequires : R-tmvnsim
 BuildRequires : buildreq-R
 
@@ -40,10 +41,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1595430940
+export SOURCE_DATE_EPOCH=1595524078
 
 %install
-export SOURCE_DATE_EPOCH=1595430940
+export SOURCE_DATE_EPOCH=1595524078
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
