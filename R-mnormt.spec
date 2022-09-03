@@ -4,7 +4,7 @@
 #
 Name     : R-mnormt
 Version  : 2.1.0
-Release  : 49
+Release  : 50
 URL      : https://cran.r-project.org/src/contrib/mnormt_2.1.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/mnormt_2.1.0.tar.gz
 Summary  : The Multivariate Normal and t Distributions, and Their Truncated
